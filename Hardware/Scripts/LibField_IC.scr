@@ -1,0 +1,7 @@
+# Add attributes for: IC
+
+ATTRIBUTE Manufacturer CONSTANT;
+ATTRIBUTE ManufacturerPartNo CONSTANT;
+ATTRIBUTE Supplier CONSTANT;
+ATTRIBUTE OrderCode CONSTANT;
+ATTRIBUTE VALUE ' ' VARIABLE;

@@ -1,0 +1,111 @@
+# Initialiseert de gebruikte globale variabelen voor de print.
+#
+
+ATTRIBUTE * PCB_FINISH 'ENIG'
+ATTRIBUTE * PCB_NAME 'PCB_NAME'
+ATTRIBUTE * PCB_SCREEN_BOT ''
+ATTRIBUTE * PCB_SCREEN_TOP ''
+ATTRIBUTE * PCB_SILK_BOT ''
+ATTRIBUTE * PCB_SILK_TOP ''
+ATTRIBUTE * PCB_SIZE_LENGTH '241.3'
+ATTRIBUTE * PCB_SIZE_WIDTH '241.3'
+ATTRIBUTE * PCB_X_REPEATS '1'
+ATTRIBUTE * PCB_X_STEP '0'
+ATTRIBUTE * PCB_Y_REPEATS '1'
+ATTRIBUTE * PCB_Y_STEP '0'
+
+LAYER 49
+WIRE 0 (0 0) (241.3 0)
+WIRE 0 (241.3 0) (241.3 241.3)
+WIRE 0 (241.3 241.3) (0 241.3)
+WIRE 0 (0 241.3) (0 0)
+
+LAYER 49
+WIRE 0.4 (7 -0.2) (-7.4 -0.2)
+WIRE 0.4 (-0.2 7) (-0.2 -7.4)
+WIRE 0.4 (5.8 -0.2) +0 (-0.2 -6.2)
+WIRE 0.4 (-6.2 -0.2) +0 (-0.2 -6.2)
+WIRE 0.4 (-0.2 5.8) +0 (-6.2 -0.2)
+WIRE 0.4 (3.8 -0.2) +0 (-0.2 -4.2)
+WIRE 0.4 (-4.2 -0.2) +0 (-0.2 -4.2)
+WIRE 0.4 (-0.2 3.8) +0 (-4.2 -0.2)
+WIRE 0.4 (1.8 -0.2) +0 (-0.2 -2.2)
+WIRE 0.4 (-2.2 -0.2) +0 (-0.2 -2.2)
+WIRE 0.4 (-0.2 1.8) +0 (-2.2 -0.2)
+
+CHANGE FONT VECTOR
+CHANGE SIZE 2
+CHANGE RATIO 10
+CHANGE ALIGN BOTTOM LEFT
+TEXT >PCB_NAME (8 -4)
+TEXT >PCB_REV (20 -4)
+
+
+# automatisch spiegelende lagen eerst op een
+# niet-spiegelende zetten en dan verplaatsen
+
+LAYER 1
+TEXT 'Inner solder side' (8 -7)
+CHANGE LAYER 15 (8 -7)
+LAYER 1
+TEXT 'Inner top side' (8 -7)
+CHANGE LAYER 2 (8 -7)
+
+LAYER 1
+TEXT 'Copper solder side' (8 -7)
+CHANGE LAYER 16 (8 -7)
+LAYER 1
+TEXT 'Copper top side' (8 -7)
+LAYER 2 InnerTop
+LAYER 2 InnerSolder
+
+
+LAYER 21
+TEXT 'Parts solder side' (8 -10)
+CHANGE LAYER 22 (8 -10)
+LAYER 21
+TEXT 'Parts top side' (8 -10)
+
+LAYER 29
+TEXT 'Resist solder side' (8 -7)
+CHANGE LAYER 30 (8 -7)
+LAYER 29
+TEXT 'Resist top side' (8 -7)
+
+LAYER 31
+TEXT 'Paste solder side' (8 -7)
+CHANGE LAYER 32 (8 -7)
+LAYER 31
+TEXT 'Paste top side'
+
+
+LAYER 33 tPeel-off
+TEXT 'Peel-off solder side' (8 -7)
+CHANGE LAYER 34 (8 -7)
+LAYER 34 bPeel-off
+LAYER 33
+TEXT 'Peel-off top side' (8 -7)
+
+LAYER 35 tSilk
+TEXT 'Silk solder side' (8 -7)
+CHANGE LAYER 36 (8 -7)
+LAYER 36 bSilk
+LAYER 35
+TEXT 'Silk top side' (8 -7)
+
+# LAYER 44
+# TEXT 'Plated drills' (38 -7)
+# LAYER 45
+# TEXT 'NON-plated drills' (38 -10)
+# LAYER 46
+# TEXT 'Milling' (38 -4)
+
+LAYER 50 cCAD
+LAYER 51 tCAD
+LAYER 52 bCAD
+LAYER 999 OUTLINE_TRY
+
+
+DISPLAY NONE
+DISPLAY 1 2 15 16 17 18 19 20 21 22 23 24 25 26 27 28 33 34 45 46 47 48 49 50 51 52
+LAYER 1
