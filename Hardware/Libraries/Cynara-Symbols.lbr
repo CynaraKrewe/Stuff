@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.5.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>Voedingsymbolen + frames</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+5V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98" ratio="12">&gt;Value</text>
+<text x="-1.778" y="0.254" size="1.778" layer="94" ratio="12">+5V</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+12V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="0.254" size="1.778" layer="94" ratio="12">+12V</text>
+<pin name="+12V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+18V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="0.254" size="1.778" layer="94" ratio="12">+18V</text>
+<pin name="+18V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+15V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="0.254" size="1.778" layer="94" ratio="12">+15V</text>
+<pin name="+15V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+24V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.54" y="0.254" size="1.778" layer="94" ratio="12">+24V</text>
+<pin name="+24V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="GND">
+<wire x1="-1.27" y1="1.016" x2="0" y2="1.016" width="0.254" layer="94"/>
+<wire x1="0" y1="1.016" x2="1.27" y2="1.016" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.016" width="0.254" layer="94"/>
+<text x="-2.286" y="-1.778" size="1.778" layer="98">&gt;Value</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-12V">
+<wire x1="-0.508" y1="1.778" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.778" x2="0" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="1.778" x2="-0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="-1.778" size="1.778" layer="94" ratio="12">-12V</text>
+<pin name="-12V" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-15V">
+<wire x1="-0.508" y1="1.778" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.778" x2="0" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="1.778" x2="-0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="-1.778" size="1.778" layer="94" ratio="12">-15V</text>
+<pin name="-15V" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-18V">
+<wire x1="-0.508" y1="1.778" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.778" x2="0" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="1.778" x2="-0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="-1.778" size="1.778" layer="94" ratio="12">-18V</text>
+<pin name="-18V" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-24V">
+<wire x1="-0.508" y1="1.778" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.778" x2="0" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="1.778" x2="-0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="-1.778" size="1.778" layer="94" ratio="12">-24V</text>
+<pin name="-24V" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-5V">
+<wire x1="-0.508" y1="1.778" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.778" x2="0" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="1.778" x2="-0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-1.524" y="-1.778" size="1.778" layer="94" ratio="12">-5V</text>
+<pin name="-5V" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="EARTH">
+<wire x1="-1.778" y1="1.016" x2="0" y2="1.016" width="0.254" layer="94"/>
+<wire x1="0" y1="1.016" x2="1.778" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0.254" x2="1.016" y2="0.254" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-0.508" x2="0.381" y2="-0.508" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<pin name="EARTH" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.016" width="0.254" layer="94"/>
+</symbol>
+<symbol name="GNDA">
+<wire x1="-1.27" y1="0.762" x2="0" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0.762" x2="1.27" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0.762" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-0.762" y="-1.778" size="1.778" layer="94" ratio="12">A</text>
+<pin name="GNDA" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+3.3V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">+3.3V</text>
+<pin name="+3.3V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="GNDX">
+<wire x1="-1.27" y1="0.762" x2="0" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0.762" x2="1.27" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0.762" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-0.762" y="-1.778" size="1.778" layer="94">X</text>
+<pin name="GNDX" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="GND-GNDA">
+<wire x1="-4.445" y1="0" x2="-0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0" x2="4.445" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.524" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="2.54" x2="-0.254" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.254" y1="2.54" x2="1.016" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="2.794" x2="-0.762" y2="3.302" width="0.254" layer="94"/>
+<wire x1="0.254" y1="2.794" x2="0.762" y2="3.302" width="0.254" layer="94"/>
+<wire x1="0" y1="2.794" x2="0" y2="3.556" width="0.254" layer="94"/>
+<text x="0.508" y="-2.54" size="1.778" layer="96">GNDA</text>
+<text x="-6.096" y="-2.54" size="1.778" layer="96">GND</text>
+<pin name="GND" x="-2.54" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<pin name="GNDA" x="2.54" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="TH">
+<wire x1="-1.905" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.905" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="-3.81" size="1.778" layer="98">&gt;VALUE</text>
+<pin name="TH" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="A4L-OLD">
+<wire x1="221" y1="0" x2="221" y2="5" width="0.254" layer="94"/>
+<text x="214" y="6" size="1.27" layer="94" ratio="12">&gt;CDS</text>
+<text x="214" y="1" size="1.27" layer="94" ratio="12">Rev.</text>
+<text x="215" y="12" size="1.27" layer="94" ratio="12">&gt;REV1</text>
+<text x="215" y="14" size="1.27" layer="94" ratio="12">&gt;REV2</text>
+<text x="215" y="16" size="1.27" layer="94" ratio="12">&gt;REV3</text>
+<text x="215" y="18" size="1.27" layer="94" ratio="12">&gt;REV4</text>
+<text x="222.258" y="1.048" size="1.27" layer="94" ratio="12">Date</text>
+<text x="225" y="12" size="1.27" layer="94" ratio="12">&gt;DATE1</text>
+<text x="225" y="14" size="1.27" layer="94" ratio="12">&gt;DATE2</text>
+<text x="225" y="16" size="1.27" layer="94" ratio="12">&gt;DATE3</text>
+<text x="225" y="18" size="1.27" layer="94" ratio="12">&gt;DATE4</text>
+<text x="234" y="1" size="1.27" layer="94" ratio="12">Board</text>
+<text x="235" y="12" size="1.27" layer="94" ratio="12">&gt;BOARD1</text>
+<text x="235" y="14" size="1.27" layer="94" ratio="12">&gt;BOARD2</text>
+<text x="235" y="16" size="1.27" layer="94" ratio="12">&gt;BOARD3</text>
+<text x="235" y="18" size="1.27" layer="94" ratio="12">&gt;BOARD4</text>
+<text x="242" y="1" size="1.27" layer="94" ratio="12">Remarks</text>
+<text x="245" y="12" size="1.27" layer="94" ratio="12">&gt;REM1</text>
+<text x="245" y="14" size="1.27" layer="94" ratio="12">&gt;REM2</text>
+<text x="245" y="16" size="1.27" layer="94" ratio="12">&gt;REM3</text>
+<text x="245" y="18" size="1.27" layer="94" ratio="12">&gt;REM4</text>
+<text x="270" y="17" size="1.778" layer="94" ratio="12">Sheet</text>
+<text x="277" y="17" size="1.778" layer="94" ratio="12">&gt;SHEET</text>
+<text x="270" y="6" size="1.27" layer="94" ratio="12">Project</text>
+<text x="253" y="1" size="2.54" layer="94" ratio="12">&gt;DRAWING_NAME</text>
+<text x="289" y="22" size="1.27" layer="94" ratio="12">*=option</text>
+<frame x1="0" y1="0" x2="297" y2="210" columns="8" rows="5" layer="94" border-right="no" border-bottom="no"/>
+<wire x1="213" y1="5" x2="213" y2="21" width="0.254" layer="94"/>
+<wire x1="213" y1="21" x2="269" y2="21" width="0.254" layer="94"/>
+<wire x1="297" y1="21" x2="269" y2="21" width="0.254" layer="94"/>
+<wire x1="269" y1="21" x2="269" y2="5" width="0.254" layer="94"/>
+<wire x1="269" y1="5" x2="252" y2="5" width="0.254" layer="94"/>
+<wire x1="252" y1="5" x2="241" y2="5" width="0.254" layer="94"/>
+<wire x1="241" y1="5" x2="232" y2="5" width="0.254" layer="94"/>
+<wire x1="232" y1="5" x2="221" y2="5" width="0.254" layer="94"/>
+<wire x1="221" y1="5" x2="213" y2="5" width="0.254" layer="94"/>
+<wire x1="213" y1="5" x2="213" y2="0" width="0.254" layer="94"/>
+<wire x1="213" y1="0" x2="221" y2="0" width="0.254" layer="94"/>
+<wire x1="221" y1="0" x2="232" y2="0" width="0.254" layer="94"/>
+<wire x1="232" y1="0" x2="241" y2="0" width="0.254" layer="94"/>
+<wire x1="241" y1="0" x2="252" y2="0" width="0.254" layer="94"/>
+<wire x1="252" y1="0" x2="297" y2="0" width="0.254" layer="94"/>
+<wire x1="297" y1="0" x2="297" y2="5" width="0.254" layer="94"/>
+<wire x1="297" y1="5" x2="269" y2="5" width="0.254" layer="94"/>
+<wire x1="232" y1="0" x2="232" y2="5" width="0.254" layer="94"/>
+<wire x1="241" y1="0" x2="241" y2="5" width="0.254" layer="94"/>
+<wire x1="252" y1="0" x2="252" y2="5" width="0.254" layer="94"/>
+</symbol>
+<symbol name="A4P-OLD">
+<wire x1="152.4" y1="0" x2="152.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="152.4" y1="2.54" x2="152.4" y2="5.08" width="0.254" layer="94"/>
+<wire x1="152.4" y1="5.08" x2="152.4" y2="15.24" width="0.254" layer="94"/>
+<wire x1="152.4" y1="15.24" x2="157.48" y2="15.24" width="0.254" layer="94"/>
+<wire x1="157.48" y1="15.24" x2="165.1" y2="15.24" width="0.254" layer="94"/>
+<wire x1="165.1" y1="15.24" x2="172.72" y2="15.24" width="0.254" layer="94"/>
+<wire x1="172.72" y1="15.24" x2="200.66" y2="15.24" width="0.254" layer="94"/>
+<wire x1="200.66" y1="15.24" x2="228.6" y2="15.24" width="0.254" layer="94"/>
+<wire x1="213.36" y1="8.128" x2="228.6" y2="8.128" width="0.254" layer="94"/>
+<wire x1="152.4" y1="2.54" x2="157.48" y2="2.54" width="0.254" layer="94"/>
+<wire x1="157.48" y1="2.54" x2="165.1" y2="2.54" width="0.254" layer="94"/>
+<wire x1="165.1" y1="2.54" x2="172.72" y2="2.54" width="0.254" layer="94"/>
+<wire x1="172.72" y1="2.54" x2="200.66" y2="2.54" width="0.254" layer="94"/>
+<wire x1="213.36" y1="5.08" x2="213.36" y2="8.128" width="0.254" layer="94"/>
+<wire x1="157.48" y1="2.54" x2="157.48" y2="15.24" width="0.254" layer="94"/>
+<wire x1="165.1" y1="15.24" x2="165.1" y2="2.54" width="0.254" layer="94"/>
+<wire x1="172.72" y1="2.54" x2="172.72" y2="15.24" width="0.254" layer="94"/>
+<wire x1="200.66" y1="15.24" x2="200.66" y2="2.54" width="0.254" layer="94"/>
+<wire x1="152.4" y1="5.08" x2="213.36" y2="5.08" width="0.254" layer="94"/>
+<wire x1="200.66" y1="2.54" x2="213.36" y2="2.54" width="0.254" layer="94"/>
+<wire x1="213.36" y1="2.54" x2="213.36" y2="5.08" width="0.254" layer="94"/>
+<text x="153.67" y="0.508" size="1.27" layer="94" ratio="12">&gt;CDS</text>
+<text x="153.416" y="3.048" size="1.27" layer="94" ratio="12">Rev.</text>
+<text x="153.67" y="5.588" size="1.27" layer="94" ratio="12">&gt;REV1</text>
+<text x="153.67" y="8.128" size="1.27" layer="94" ratio="12">&gt;REV2</text>
+<text x="153.67" y="10.668" size="1.27" layer="94" ratio="12">&gt;REV3</text>
+<text x="153.67" y="13.208" size="1.27" layer="94" ratio="12">&gt;REV4</text>
+<text x="159.258" y="3.048" size="1.27" layer="94" ratio="12">Date</text>
+<text x="158.242" y="5.588" size="1.27" layer="94" ratio="12">&gt;DATE1</text>
+<text x="158.242" y="8.128" size="1.27" layer="94" ratio="12">&gt;DATE2</text>
+<text x="158.242" y="10.668" size="1.27" layer="94" ratio="12">&gt;DATE3</text>
+<text x="158.242" y="13.208" size="1.27" layer="94" ratio="12">&gt;DATE4</text>
+<text x="166.624" y="3.048" size="1.27" layer="94" ratio="12">Board</text>
+<text x="165.862" y="5.588" size="1.27" layer="94" ratio="12">&gt;BOARD1</text>
+<text x="165.862" y="8.128" size="1.27" layer="94" ratio="12">&gt;BOARD2</text>
+<text x="165.862" y="10.668" size="1.27" layer="94" ratio="12">&gt;BOARD3</text>
+<text x="165.862" y="13.208" size="1.27" layer="94" ratio="12">&gt;BOARD4</text>
+<text x="173.736" y="3.048" size="1.27" layer="94" ratio="12">Remarks</text>
+<text x="173.482" y="5.588" size="1.27" layer="94" ratio="12">&gt;REM1</text>
+<text x="173.482" y="8.128" size="1.27" layer="94" ratio="12">&gt;REM2</text>
+<text x="173.482" y="10.668" size="1.27" layer="94" ratio="12">&gt;REM3</text>
+<text x="173.482" y="13.208" size="1.27" layer="94" ratio="12">&gt;REM4</text>
+<text x="201.422" y="5.842" size="1.778" layer="94" ratio="12">Sheet</text>
+<text x="208.026" y="5.842" size="1.778" layer="94" ratio="12">&gt;SHEET</text>
+<text x="201.676" y="3.048" size="1.27" layer="94" ratio="12">Project</text>
+<text x="201.422" y="9.652" size="3.556" layer="94" ratio="12">&gt;DRAWING_NAME</text>
+<text x="221.488" y="16.002" size="1.27" layer="94" ratio="12">*=option</text>
+<frame x1="0" y1="0" x2="228.6" y2="355.6" columns="9" rows="14" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="+3.3USB">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">+3.3usb</text>
+<pin name="+3.3USB" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+3.3SD">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">+3.3sd</text>
+<pin name="+3.3SD" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+3.3LCD">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">+3.3lcd</text>
+<pin name="+3.3LCD" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="LOGO">
+<text x="0" y="0" size="1.27" layer="94" ratio="12">PCB LOGO</text>
+</symbol>
+<symbol name="+3.3A">
+<wire x1="0.508" y1="0.762" x2="0" y2="2.286" width="0.254" layer="94"/>
+<wire x1="0" y1="2.286" x2="-0.508" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0.762" x2="0" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0.762" x2="0.508" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.762" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="2.794" size="1.778" layer="94" ratio="12">+3.3A</text>
+<pin name="+3.3A" x="0" y="0" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+15A">
+<wire x1="0.508" y1="0.762" x2="0" y2="2.286" width="0.254" layer="94"/>
+<wire x1="0" y1="2.286" x2="-0.508" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0.762" x2="0" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0.762" x2="0.508" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.762" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="2.794" size="1.778" layer="94" ratio="12">+15A</text>
+<pin name="+15A" x="0" y="0" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="-15A">
+<wire x1="-0.508" y1="-0.762" x2="0" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.286" x2="0.508" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-0.762" x2="0" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.762" x2="-0.508" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="-4.318" size="1.778" layer="94" ratio="12">-15A</text>
+<pin name="-15A" x="0" y="0" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+5A">
+<wire x1="0.508" y1="0.762" x2="0" y2="2.286" width="0.254" layer="94"/>
+<wire x1="0" y1="2.286" x2="-0.508" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0.762" x2="0" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0.762" x2="0.508" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.762" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98" ratio="12">&gt;Value</text>
+<text x="-1.778" y="2.794" size="1.778" layer="94" ratio="12">+5A</text>
+<pin name="+5A" x="0" y="0" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="-5A">
+<wire x1="-0.508" y1="-0.762" x2="0" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.286" x2="0.508" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-0.762" x2="0" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.762" x2="-0.508" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-1.524" y="-4.318" size="1.778" layer="94" ratio="12">-5A</text>
+<pin name="-5A" x="0" y="0" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+9V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98" ratio="12">&gt;Value</text>
+<text x="-1.778" y="0.254" size="1.778" layer="94" ratio="12">+8V</text>
+<pin name="+8V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+3.3X">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">+3.3X</text>
+<pin name="+3.3X" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VDDQ_1V5">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-1.778" y="0.254" size="1.778" layer="94" ratio="12">1V5</text>
+<pin name="VDDQ_1V5" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VREF">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.032" y="0.254" size="1.778" layer="94" ratio="12">Vref</text>
+<pin name="VREF" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+15X">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="0.254" size="1.778" layer="94" ratio="12">+15X</text>
+<pin name="+15X" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+3.3S">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">+3.3S</text>
+<pin name="+3.3S" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+3.3L">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">+3.3L</text>
+<pin name="+3.3L" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+1.8V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">+1.8V</text>
+<pin name="+1.8V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+SDC">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">+SDC</text>
+<pin name="+SDC" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+10V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="0.254" size="1.778" layer="94" ratio="12">+10V</text>
+<pin name="+10V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="-10V">
+<wire x1="-0.508" y1="1.778" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.778" x2="0" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="1.778" x2="-0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="-1.778" size="1.778" layer="94" ratio="12">-10V</text>
+<pin name="-10V" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+10A">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="0.254" size="1.778" layer="94" ratio="12">+10A</text>
+<pin name="+10A" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="-10A">
+<wire x1="-0.508" y1="1.778" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.778" x2="0" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="1.778" x2="-0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="-1.778" size="1.778" layer="94" ratio="12">-10A</text>
+<pin name="-10A" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-15X">
+<wire x1="-0.508" y1="1.778" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.778" x2="0" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="1.778" x2="-0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="-1.778" size="1.778" layer="94" ratio="12">-15X</text>
+<pin name="-15X" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="X3V3">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">X3V3</text>
+<pin name="X3V3" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="X5V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-1.778" y="0.254" size="1.778" layer="94" ratio="12">X5V</text>
+<pin name="X5V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+8V2">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">+8V2</text>
+<pin name="+8V2" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="X12V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">X12V</text>
+<pin name="X12V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="M3V3">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="0.254" size="1.778" layer="94" ratio="12">M3V3</text>
+<pin name="M3V3" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="GNDM">
+<wire x1="-1.27" y1="0.762" x2="0" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0.762" x2="1.27" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0.762" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-1.016" y="-1.778" size="1.778" layer="94">M</text>
+<pin name="GNDM" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="GNDA(GND)">
+<wire x1="-1.27" y1="0.762" x2="0" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0.762" x2="1.27" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0.762" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-0.762" y="-1.778" size="1.778" layer="94" ratio="12">A</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="24V~">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.54" y="0.254" size="1.778" layer="94" ratio="12">24V~</text>
+<pin name="24V~" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="27.5V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.54" y="0.254" size="1.778" layer="94" ratio="12">27.5V</text>
+<pin name="27.5V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+35V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.54" y="0.254" size="1.778" layer="94" ratio="12">+35V</text>
+<pin name="+35V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+24VI">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.54" y="0.254" size="1.778" layer="94" ratio="12">+24VI</text>
+<pin name="+24VI" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+24X">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.54" y="0.254" size="1.778" layer="94" ratio="12">+24X</text>
+<pin name="+24X" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+5X">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98" ratio="12">&gt;Value</text>
+<text x="-1.778" y="0.254" size="1.778" layer="94" ratio="12">+5X</text>
+<pin name="+5X" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+5R">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98" ratio="12">&gt;Value</text>
+<text x="-1.778" y="0.254" size="1.778" layer="94" ratio="12">+5R</text>
+<pin name="+5R" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+6V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98" ratio="12">&gt;Value</text>
+<text x="-1.778" y="0.254" size="1.778" layer="94" ratio="12">+6X</text>
+<pin name="+6X" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="REF">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-1.524" y="0.254" size="1.778" layer="94" ratio="12">Ref</text>
+<pin name="REF" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+12X">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.286" y="0.254" size="1.778" layer="94" ratio="12">+12X</text>
+<pin name="+12X" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VEXT">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.54" y="0.254" size="1.778" layer="94" ratio="12">Vext</text>
+<pin name="VEXT" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+48V">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.54" y="0.254" size="1.778" layer="94" ratio="12">+48V</text>
+<pin name="+48V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="A5P">
+<frame x1="0" y1="0" x2="420" y2="297" columns="8" rows="5" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="VEXT_A">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.54" y="0.254" size="1.778" layer="94" ratio="12">Vext_A</text>
+<pin name="VEXT_A" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VEXT_B">
+<wire x1="0.508" y1="-1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.778" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.54" y="0.254" size="1.778" layer="94" ratio="12">Vext_B</text>
+<pin name="VEXT_B" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+1.2V">
+<wire x1="0.508" y1="0.762" x2="0" y2="2.286" width="0.254" layer="94"/>
+<wire x1="0" y1="2.286" x2="-0.508" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0.762" x2="0" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0.762" x2="0.508" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.762" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="98">&gt;Value</text>
+<text x="-2.794" y="2.794" size="1.778" layer="94" ratio="12">+1.2V</text>
+<pin name="+1.2V" x="0" y="0" visible="off" length="point" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-5V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="-5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+12V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-12V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="-12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+18V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+18V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-18V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="-18V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+24V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+24V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-24V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="-24V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+15V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+15V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-15V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="-15V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EARTH" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="EARTH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GNDA" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="GNDA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3.3V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GNDX" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="GNDX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TH" prefix="=">
+<description>&lt;b&gt;Thermal&lt;/b&gt;&lt;p&gt;</description>
+<gates>
+<gate name=" " symbol="TH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="A4_LANDSCAPE" prefix="FRAME" uservalue="yes">
+<description>A4 landschap met 9 rijen en 14 kolommen.</description>
+<gates>
+<gate name=" " symbol="A4L-OLD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="VALUE" value=" " constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="A4_PORTRAIT" prefix="FRAME" uservalue="yes">
+<description>A4 portret met 14 rijen en 9 kolommen.</description>
+<gates>
+<gate name=" " symbol="A4P-OLD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="VALUE" value=" " constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3.3USB" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+3.3USB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3.3SD" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+3.3SD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3.3LCD" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+3.3LCD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3.3A" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+3.3A" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+15A" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+15A" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-15A" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="-15A" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5A" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+5A" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+8V" prefix="=">
+<description>SUPPLY SYMBOL</description>
+<gates>
+<gate name=" " symbol="+9V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3.3X" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+3.3X" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDDQ_1V5">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VDDQ_1V5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREF">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VREF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+15X">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+15X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3.3L">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+3.3L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3.3S">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+3.3S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+1.8V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+1.8V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+SDC">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+SDC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+10V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+10V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-10V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="-10V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+10A">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+10A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-10A">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="-10A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-15X">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="-15X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="X3V3" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="X3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="X5V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="X5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+8V2" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+8V2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="X12V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="X12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GNDM" prefix="=">
+<gates>
+<gate name=" " symbol="GNDM" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M3V3" prefix="=">
+<gates>
+<gate name=" " symbol="M3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GNDA(GND)" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="GNDA(GND)" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="24V~" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="24V~" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="27.5V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="27.5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+35V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+35V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+24VI" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+24VI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+24X" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+24X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5X" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+5X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5R" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+5R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+6X" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+6V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="REF" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="REF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+12X">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+12X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VEXT" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="VEXT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+48V" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="+48V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-5A" prefix="=">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name=" " symbol="-5A" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VEXT_A" prefix="VEXT_A">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VEXT_A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VEXT_B" prefix="VEXT_B">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VEXT_B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+1.2V">
+<gates>
+<gate name="G$1" symbol="+1.2V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
