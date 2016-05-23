@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1173,6 +1173,42 @@ LED    --YES</description>
 <wire x1="-9.2" y1="-1" x2="-8" y2="-1" width="0.2" layer="40"/>
 <wire x1="-8" y1="-1" x2="-8" y2="6" width="0.2" layer="40"/>
 </package>
+<package name="61400416121">
+<description>WR-COM Horizontal USB Type B</description>
+<wire x1="6.02" y1="10.28" x2="-6.02" y2="10.28" width="0.2" layer="51"/>
+<wire x1="-6.02" y1="10.28" x2="-6.02" y2="-6.22" width="0.2" layer="51"/>
+<wire x1="-6.02" y1="-6.22" x2="6.02" y2="-6.22" width="0.2" layer="51"/>
+<wire x1="6.02" y1="-6.22" x2="6.02" y2="10.28" width="0.2" layer="51"/>
+<pad name="Z2" x="-6.02" y="0" drill="2.3" rot="R180"/>
+<pad name="Z1" x="6.02" y="0" drill="2.3" rot="R180"/>
+<pad name="4" x="-1.25" y="-2.71" drill="0.92" rot="R180"/>
+<pad name="3" x="1.25" y="-2.71" drill="0.92" rot="R180"/>
+<pad name="1" x="-1.25" y="-4.71" drill="0.92" rot="R180"/>
+<pad name="2" x="1.25" y="-4.71" drill="0.92" rot="R180"/>
+<text x="-5" y="-8" size="1" layer="25" font="vector" ratio="14">&gt;Name</text>
+<wire x1="8" y1="-6.47" x2="8" y2="10.53" width="0.2" layer="39"/>
+<wire x1="8" y1="10.53" x2="-8" y2="10.53" width="0.2" layer="39"/>
+<wire x1="-8" y1="10.53" x2="-8" y2="-6.47" width="0.2" layer="39"/>
+<wire x1="-8" y1="-6.47" x2="8" y2="-6.47" width="0.2" layer="39"/>
+<wire x1="-6.02" y1="1.9" x2="-6.02" y2="10.28" width="0.2" layer="21"/>
+<wire x1="-6.02" y1="10.28" x2="6.02" y2="10.28" width="0.2" layer="21"/>
+<wire x1="6.02" y1="10.28" x2="6.02" y2="1.9" width="0.2" layer="21"/>
+<wire x1="-6.02" y1="-1.9" x2="-6.02" y2="-6.22" width="0.2" layer="21"/>
+<wire x1="-6.02" y1="-6.22" x2="6.02" y2="-6.22" width="0.2" layer="21"/>
+<wire x1="6.02" y1="-6.22" x2="6.02" y2="-1.9" width="0.2" layer="21"/>
+<wire x1="-8" y1="2" x2="-4" y2="2" width="0.2" layer="40"/>
+<wire x1="-4" y1="2" x2="-4" y2="-2" width="0.2" layer="40"/>
+<wire x1="-4" y1="-2" x2="-8" y2="-2" width="0.2" layer="40"/>
+<wire x1="-8" y1="-2" x2="-8" y2="2" width="0.2" layer="40"/>
+<wire x1="-2.3" y1="-1.7" x2="2.3" y2="-1.7" width="0.2" layer="40"/>
+<wire x1="2.3" y1="-1.7" x2="2.3" y2="-5.7" width="0.2" layer="40"/>
+<wire x1="2.3" y1="-5.7" x2="-2.3" y2="-5.7" width="0.2" layer="40"/>
+<wire x1="-2.3" y1="-5.7" x2="-2.3" y2="-1.7" width="0.2" layer="40"/>
+<wire x1="4" y1="2" x2="8" y2="2" width="0.2" layer="40"/>
+<wire x1="8" y1="2" x2="8" y2="-2" width="0.2" layer="40"/>
+<wire x1="8" y1="-2" x2="4" y2="-2" width="0.2" layer="40"/>
+<wire x1="4" y1="-2" x2="4" y2="2" width="0.2" layer="40"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BOX14">
@@ -2100,6 +2136,27 @@ Applications:
 <pin name="NC" x="-2.54" y="0" visible="pad" length="short" direction="nc"/>
 <text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="0" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="4_USB">
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="7.62" size="1.778" layer="96">&gt;Value</text>
+<pin name="GND" x="-10.16" y="-5.08" visible="pin" length="middle" direction="pas"/>
+<pin name="D_P" x="-10.16" y="-2.54" visible="pin" length="middle" direction="pas"/>
+<pin name="D_N" x="-10.16" y="0" visible="pin" length="middle" direction="pas"/>
+<pin name="VCC" x="-10.16" y="2.54" visible="pin" length="middle" direction="pas"/>
+<wire x1="2.54" y1="6.35" x2="2.54" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="-8.89" x2="-1.27" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-1.27" y1="-8.89" x2="-1.27" y2="-10.16" width="0.254" layer="94" style="shortdash"/>
+<pin name="GND@1" x="-7.62" y="-10.16" visible="pin" length="middle"/>
+<pin name="GND@2" x="-7.62" y="-12.7" visible="pin" length="middle"/>
+<wire x1="-1.27" y1="-10.16" x2="-1.27" y2="-12.7" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-2.54" y1="-10.16" x2="-1.27" y2="-10.16" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-2.54" y1="-12.7" x2="-1.27" y2="-12.7" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-1.27" y1="6.35" x2="2.54" y2="6.35" width="0.254" layer="94" style="shortdash"/>
+<text x="5.08" y="-2.54" size="1.778" layer="94" rot="R90">USB</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3080,6 +3137,38 @@ Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WE-LAN_RJ45/74990111
 <attribute name="CREATED-DATE" value="AUG 2012" constant="no"/>
 <attribute name="DATASHEET-URL" value="http://katalog.we-online.de/kataloge/eisos/media/pdf/7499011121A.pdf" constant="no"/>
 <attribute name="MANUFACTURER" value="Würth Elektronik eiSos GmbH"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB2.0" prefix="X" uservalue="yes">
+<description>&lt;b&gt;WR-COM Horizontal USB Type B&lt;/b&gt;=&gt;Code : Con_I-O_COM_USB-2.0_B_61400416121
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/eican/Con_I-O_COM_USB-2.0_B_61400416121_pf2.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/thumbs2/eican/thb_Con_I-O_COM_USB-2.0_B_61400416121_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/em/614_004_161_21"&gt;http://katalog.we-online.de/en/em/614_004_161_21&lt;/a&gt;&lt;p&gt;
+Created 2014-07-09, Karrer Zheng&lt;br&gt;
+2014 (C) Würth Elektronik</description>
+<gates>
+<gate name="X1" symbol="4_USB" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="-TYPE-B" package="61400416121">
+<connects>
+<connect gate="X1" pin="D_N" pad="2"/>
+<connect gate="X1" pin="D_P" pad="3"/>
+<connect gate="X1" pin="GND" pad="4"/>
+<connect gate="X1" pin="GND@1" pad="Z1"/>
+<connect gate="X1" pin="GND@2" pad="Z2"/>
+<connect gate="X1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="Wurth"/>
+<attribute name="MANUFACTURERPARTNO" value="61400416121"/>
+<attribute name="ORDERCODE" value="61400416121"/>
+<attribute name="SUPPLIER" value="Wurth"/>
+<attribute name="VALUE" value=" " constant="no"/>
 </technology>
 </technologies>
 </device>
